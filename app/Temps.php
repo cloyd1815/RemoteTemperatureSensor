@@ -9,7 +9,7 @@ class Temps extends Model {
 	 *
 	 * @var string
 	 */
-	protected $table = 'temp';
+	protected $table = 'temps';
 
 	/**
 	 * The attributes that are mass assignable.

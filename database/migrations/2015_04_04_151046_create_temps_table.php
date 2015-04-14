@@ -18,7 +18,7 @@ class CreateTempsTable extends Migration {
 			$table->integer('temp_id');
 			$table->integer('temp');
 			$table->timestamps();
-		});	}
+		});
 	}
 
 	/**
