@@ -17,7 +17,6 @@ class Tempsensors extends Model {
 	 * @var array
 	 */
 	protected $fillable = ['name', 'user_id'];
-
 	public function temps()
     {
         return $this->hasMany('App\temps');
