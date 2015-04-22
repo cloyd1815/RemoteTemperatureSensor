@@ -10,7 +10,8 @@
 				<div class="panel-body">
 					@foreach($sensors as $sensor)
 					<ol>
-					<li></li>
+					<li>{{ $sensor->name }}</li>
+					<li>{{ $sensor->getCurrentTemp->temp }}</li>
 					</ol>
 					@endforeach
 				</div>

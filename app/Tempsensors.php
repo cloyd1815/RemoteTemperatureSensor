@@ -17,8 +17,14 @@ class Tempsensors extends Model {
 	 * @var array
 	 */
 	protected $fillable = ['name', 'user_id'];
+	
 	public function temps()
     {
         return $this->hasMany('App\temps');
+    }
+
+    public function getCurrentTemp()
+    {
+    	return $this->hasOne('App\temps')->latest();
     }
 }

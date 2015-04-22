@@ -15,7 +15,7 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-
+//   update?temp_id=#&temp=#
 Route::get('/update', 'TempController@index');
 
 Route::controllers([

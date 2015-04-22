@@ -19,7 +19,7 @@ class TempController extends Controller {
 	{
 		$sensor = Tempsensors::findOrFail(Input::get('temp_id'));
 		$temp = Input::get('temp');
-		Temps::create(['temp_id' => Input::get('temp_id'), 'temp' => $temp]);
+		Temps::create(['tempsensors_id' => Input::get('temp_id'), 'temp' => $temp]);
 	}
 
 	/**

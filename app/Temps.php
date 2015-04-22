@@ -16,6 +16,6 @@ class Temps extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'temp_id', 'temp'];
+	protected $fillable = ['name', 'tempsensors_id', 'temp'];
 
 }
