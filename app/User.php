@@ -33,6 +33,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 		public function tempsensors()
     {
-        return $this->hasMany('App\tempsensors');
+        return $this->hasMany('App\Tempsensors');
     }
 }

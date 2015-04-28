@@ -33,7 +33,7 @@ class HomeController extends Controller {
 		//find current user for use in finding all tempsensors needed
 		$userID = \Auth::id();
 		//find all the tempsensors using the userID
-		$sensors = \app\User::find($userID)->tempsensors;
+		$sensors = \App\User::find($userID)->tempsensors;
 		//find all the temps from the sensor and store them...where? Maybe move to view?
 /*		foreach($sensors as $sensor) {
 			\app\Tempsensors::find($sensor)->temps;

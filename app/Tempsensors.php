@@ -25,6 +25,6 @@ class Tempsensors extends Model {
 
     public function getCurrentTemp()
     {
-    	return $this->hasOne('App\temps')->latest();
+    	return $this->hasOne('App\Temps')->latest();
     }
 }
